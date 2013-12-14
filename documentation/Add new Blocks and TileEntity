@@ -1,0 +1,149 @@
+##How to add new Blocks and Tile Entities  (always use correct casing)  
+
+# 1 Add new Class navigate to "ModName".blocks rightclick new Class
+
+# 2 Make a new class follow the naming constant eg NameBlock (Name of the block eg Furnace capital F followed by Block capital B)
+add the following code after public class NameBlock extends Block {
+
+	public MixerBlock(int id) {
+		super(id, Material.rock);
+		this.setUnlocalizedName(Names.mixerBlock_unlocalizedName);
+		this.setCreativeTab(hydroblocks.hydroblocks);
+		this.setHardness(2F);
+		this.setResistance(15F);
+		this.setStepSound(Block.soundMetalFootstep);
+		this.setLightValue(1F);
+	}
+// change as required
+
+#3 To set a over all texture
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister register) {
+		blockIcon = register.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.batteryBlock_unlocalizedName);
+		}
+
+
+# 3A To set a texture on different sides 
+@Override
+@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister icon) {
+	topIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.nameBlock_unlocalizedName + "_top");
+	bottomIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.nameBlock_unlocalizedName + "_bottom");
+	sideIcon = icon.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.nameBlock_unlocalizedName + "_side");
+	}
+
+@Override
+@SideOnly(Side.CLIENT)
+public Icon getIcon(int side, int metadata) {
+	if(side == 0) {
+		return bottomIcon;
+	}	
+	
+	else if(side == 1) {
+		return topIcon;
+	}
+	
+	else {
+		return sideIcon;
+	}
+}
+
+#4 Navigate to "ModName".lib.config open Names
+under the correct section Items, Blocks or Tiles
+
+#4A For items add 
+
+public static final String nameItem_unlocalizedName = "itemItem";
+public static final String tutItem_name = "// Set as required";
+
+#4B For Blocks add
+public static final String nameBlock_unlocalizedName = "nameBlock";
+public static final String nameBlock_name = "// Set as required";
+
+#4C For Tiles add
+public static final String nameTile = "nameTileEntity";
+
+#5 Navigate to "ModName".lib.config open Ids * Remember //The IDs from 0-4096 are reserved for blocks. Items can be any value between 4096 and 32000
+under the correct section Items or Blocks
+
+#5A For Items add 
+public static int nameItem_actual;
+public static final int nameItem_default = 16000;
+
+#5B For Blocks add
+public static int nameBlock_actual;
+public static final int nameBlock_default = 3000;
+
+
+#6 Navigate to "ModName.lib.config open ConfigHandler
+under the correct section Itmes or Blocks
+
+#6A For Items add
+		Ids.nameItem_actual = config.getItem(config.CATEGORY_ITEM, Names.nameItem_name, 
+		Ids.nameItem_default).getInt() - 256;
+		
+#6B for Blocks add
+		Ids.nameBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.nameBlock_name, 
+		Ids.nameBlock_default).getInt();
+
+#7 Navigate to "ModName".blocks open Blocks
+
+#7A under public class Blocks add
+public static Block nameBlock;
+
+#7B add under public static void int() {
+block = new NameBlock(Ids.nameBlock_actual);
+GameRegistry.registerBlock(block, Names.nameBlock_name);
+
+#7C add under public static void addNames () {
+LanguageRegistry.addName(nameBlock, Names.nameBlock_name);
+
+#7D for Tile Entities add under public static void registerTileEntities() {
+	GameRegistry.registerTileEntity(TileEntityName.class, Names.nameTile); 
+
+#8 navigate to "ModName".blocks.tileentities add a new class following the naming constant eg TileEntityName  (TileEntity followed by block name eg Furnace capital T , E and F)
+add the following code after public class TileEntityName extends TileEntity {
+
+#9 Navigate to "ModName".blocks open Name
+add the following code 	@Override
+	public TileEntity createNewTileEntity(World world) {
+		return new TileEntityName();
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
