@@ -1,9 +1,6 @@
 package hydroblocks.lib.config;
 
-import hydroblocks.hydroblocks;
 import hydroblocks.blocks.Blocks;
-
-
 
 import java.util.Random;
 
@@ -34,8 +31,8 @@ public class EventManager implements IWorldGenerator {
 
 	private void generateOverworld(World world, Random random, int x, int z) 
 	{
-		addOreSpawn(Blocks.perliteoreBlock, world, random, x, z, 16, 16, 4 + random.nextInt(30), 200, 15, 50);
-		// will spawn in a chuck between y 15 and 50, 5 times in groups of 4 - 34
+		addOreSpawn(Blocks.perliteoreBlock, world, random, x, z, 16, 16, 4 + random.nextInt(3), 30, 43, 63);
+		// will spawn in a chuck between y 15 and 63, 50 times in groups of 4 - 14
 	}
 
 	private void generateNether(World world, Random random, int x, int z) 

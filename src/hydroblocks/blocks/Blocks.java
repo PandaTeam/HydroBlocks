@@ -3,6 +3,7 @@ package hydroblocks.blocks;
 import hydroblocks.blocks.tileentities.TileEntityBomb;
 import hydroblocks.lib.config.Ids;
 import hydroblocks.lib.config.Names;
+import hydroblocks.ore.ChalkoreBlock;
 import hydroblocks.ore.PerliteoreBlock;
 import net.minecraft.block.Block;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -14,6 +15,8 @@ public static Block block;
 public static Block bombBlock;
 public static PerliteBlock perliteBlock;
 public static Block perliteoreBlock;
+public static Block chalkoreBlock;
+
 
 public static void init() {
 block = new TutBlock(Ids.tutBlock_actual);
@@ -28,6 +31,10 @@ GameRegistry.registerBlock(perliteBlock, Names.perliteBlock_name);
 perliteoreBlock = new PerliteoreBlock(Ids.perliteoreBlock_actual);
 GameRegistry.registerBlock(perliteoreBlock, Names.perliteoreBlock_name);
 
+chalkoreBlock = new ChalkoreBlock(Ids.chalkoreBlock_actual);
+GameRegistry.registerBlock(chalkoreBlock, Names.chalkoreBlock_name);
+
+
 
 }
 
@@ -40,6 +47,7 @@ LanguageRegistry.addName(block, Names.tutBlock_name);
 LanguageRegistry.addName(bombBlock, Names.bombBlock_name);
 LanguageRegistry.addName(perliteBlock, Names.perliteBlock_name);
 LanguageRegistry.addName(perliteoreBlock, Names.perliteoreBlock_name);
+LanguageRegistry.addName(chalkoreBlock, Names.chalkoreBlock_name);
 }
 
 

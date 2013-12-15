@@ -1,6 +1,7 @@
 package hydroblocks.lib.config;
 
 import java.io.File;
+
 import net.minecraftforge.common.Configuration;
 
 public class ConfigHandler {
@@ -21,11 +22,9 @@ public class ConfigHandler {
 		
 		
 		//Items
-		Ids.tutItem_actual = config.getItem(config.CATEGORY_ITEM, Names.tutItem_name, 
-		Ids.tutItem_default).getInt() - 256;
 		
-		Ids.tutTool_actual = config.getItem(config.CATEGORY_ITEM, Names.tutTool_name, 
-		Ids.tutTool_default).getInt() - 256;
+		Ids.chalkItem_actual = config.getItem(config.CATEGORY_ITEM, Names.chalkItem_name, 
+		Ids.chalkItem_default).getInt() - 256;
 		
 		//Blocks
 		Ids.tutBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.tutBlock_name, 
@@ -40,6 +39,9 @@ public class ConfigHandler {
 		
 		Ids.perliteoreBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.perliteoreBlock_name,
 		Ids.perliteoreBlock_default).getInt();
+		
+		Ids.chalkoreBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.chalkoreBlock_name,
+		Ids.chalkoreBlock_default).getInt();
 
 		
 

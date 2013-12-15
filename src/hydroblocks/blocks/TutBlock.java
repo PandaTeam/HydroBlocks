@@ -1,15 +1,15 @@
 package hydroblocks.blocks;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import hydroblocks.hydroblocks;
+import hydroblocks.lib.ModInfo;
+import hydroblocks.lib.config.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 //import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.Icon;
-import hydroblocks.hydroblocks;
-import hydroblocks.lib.ModInfo;
-import hydroblocks.lib.config.Names;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class TutBlock extends Block {
 

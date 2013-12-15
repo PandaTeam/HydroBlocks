@@ -12,7 +12,6 @@ import hydroblocks.tab.hydroblockstab;
 
 import java.util.logging.Level;
 
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;

@@ -1,19 +1,11 @@
 package hydroblocks.lib;
 
-import hydroblocks.blocks.Blocks;
-import hydroblocks.items.Items;
-import hydroblocks.lib.config.Booleans;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.CraftingManager;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 
 public class Recipes {
 public static void init() {
 
-
+/*
 	GameRegistry.addRecipe(new ItemStack(Blocks.block, 1),
 			new Object[] {
 			"DDD",
@@ -44,6 +36,8 @@ public static void init() {
 		'S', Item.stick);
 
 }
+
+*/
 }
 }
 
