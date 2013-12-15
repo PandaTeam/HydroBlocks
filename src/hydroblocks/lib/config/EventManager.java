@@ -33,6 +33,9 @@ public class EventManager implements IWorldGenerator {
 	{
 		addOreSpawn(Blocks.perliteoreBlock, world, random, x, z, 16, 16, 4 + random.nextInt(3), 30, 43, 63);
 		// will spawn in a chuck between y 15 and 63, 50 times in groups of 4 - 14
+		
+		addOreSpawn(Blocks.chalkoreBlock, world, random, x, z, 16, 16, 4 + random.nextInt(3), 30, 43, 63);
+		// will spawn in a chuck between y 15 and 63, 50 times in groups of 4 - 14
 	}
 
 	private void generateNether(World world, Random random, int x, int z) 

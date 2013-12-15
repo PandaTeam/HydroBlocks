@@ -3,7 +3,7 @@ package hydroblocks.lib.config;
 public class Names {
 	
 // items
-public static final String chalkItem_unlocalizedName = "chalkedItem";
+public static final String chalkItem_unlocalizedName = "chalkItem";
 public static final String chalkItem_name = "Chalk Item";
 
 
