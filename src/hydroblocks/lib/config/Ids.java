@@ -7,7 +7,7 @@ public class Ids {
 // items
 
 public static int chalkItem_actual;
-public static final int chalkItem_default = 33500;
+public static final int chalkItem_default = 30350;
 
 //blocks
 public static int tutBlock_actual;
