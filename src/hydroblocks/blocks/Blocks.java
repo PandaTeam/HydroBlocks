@@ -16,6 +16,9 @@ public static Block bombBlock;
 public static PerliteBlock perliteBlock;
 public static Block perliteoreBlock;
 public static Block chalkoreBlock;
+public static Block unrockwoolBlock;
+public static Block rockwoolBlock;
+
 
 
 public static void init() {
@@ -34,6 +37,11 @@ GameRegistry.registerBlock(perliteoreBlock, Names.perliteoreBlock_name);
 chalkoreBlock = new ChalkoreBlock(Ids.chalkoreBlock_actual);
 GameRegistry.registerBlock(chalkoreBlock, Names.chalkoreBlock_name);
 
+unrockwoolBlock = new UnrockwoolBlock(Ids.unrockwoolBlock_actual);
+GameRegistry.registerBlock(unrockwoolBlock, Names.unrockwoolBlock_name);
+
+rockwoolBlock = new RockwoolBlock(Ids.rockwoolBlock_actual);
+GameRegistry.registerBlock(rockwoolBlock, Names.rockwoolBlock_name);
 
 
 }
@@ -48,6 +56,8 @@ LanguageRegistry.addName(bombBlock, Names.bombBlock_name);
 LanguageRegistry.addName(perliteBlock, Names.perliteBlock_name);
 LanguageRegistry.addName(perliteoreBlock, Names.perliteoreBlock_name);
 LanguageRegistry.addName(chalkoreBlock, Names.chalkoreBlock_name);
+LanguageRegistry.addName(unrockwoolBlock, Names.unrockwoolBlock_name);
+LanguageRegistry.addName(rockwoolBlock, Names.rockwoolBlock_name);
 }
 
 

@@ -9,6 +9,9 @@ public class Ids {
 public static int chalkItem_actual;
 public static final int chalkItem_default = 30350;
 
+public static int rockfibreItem_actual;
+public static final int rockfibreItem_default = 30351;
+
 //blocks
 public static int tutBlock_actual;
 public static final int tutBlock_default = 3350;
@@ -25,6 +28,11 @@ public static final int perliteoreBlock_default = 3353;
 public static int chalkoreBlock_actual;
 public static final int chalkoreBlock_default = 3354;
 
+public static int unrockwoolBlock_actual;
+public static final int unrockwoolBlock_default = 3355;
+
+public static int rockwoolBlock_actual;
+public static final int rockwoolBlock_default = 3356;
 
 
 

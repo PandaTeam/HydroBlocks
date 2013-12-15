@@ -4,7 +4,10 @@ public class Names {
 	
 // items
 public static final String chalkItem_unlocalizedName = "chalkItem";
-public static final String chalkItem_name = "Chalk Item";
+public static final String chalkItem_name = "Chalk Powder";
+
+public static final String rockfibreItem_unlocalizedName = "rockfibreItem";
+public static final String rockfibreItem_name = "Rock Fibre";
 
 
 // blocks
@@ -26,7 +29,11 @@ public static final String perliteoreBlock_name = "Perlite Ore";
 public static final String chalkoreBlock_unlocalizedName = "chalkoreBlock";
 public static final String chalkoreBlock_name = "Chalk Ore";
 
+public static final String unrockwoolBlock_unlocalizedName = "unrockwoolBlock";
+public static final String unrockwoolBlock_name = "Unrefined Rockwool";
 
+public static final String rockwoolBlock_unlocalizedName = "rockwoolBlock";
+public static final String rockwoolBlock_name = "Rockwool";
 
 // Tiles
 public static final String bombTile = "bombTileEntity";

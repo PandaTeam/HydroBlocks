@@ -26,6 +26,9 @@ public class ConfigHandler {
 		Ids.chalkItem_actual = config.getItem(config.CATEGORY_ITEM, Names.chalkItem_name, 
 		Ids.chalkItem_default).getInt() - 256;
 		
+		Ids.rockfibreItem_actual = config.getItem(config.CATEGORY_ITEM, Names.rockfibreItem_name, 
+		Ids.rockfibreItem_default).getInt() - 256;
+		
 		//Blocks
 		Ids.tutBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.tutBlock_name, 
 		Ids.tutBlock_default).getInt();
@@ -42,6 +45,12 @@ public class ConfigHandler {
 		
 		Ids.chalkoreBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.chalkoreBlock_name,
 		Ids.chalkoreBlock_default).getInt();
+		
+		Ids.unrockwoolBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.unrockwoolBlock_name,
+		Ids.unrockwoolBlock_default).getInt();
+		
+		Ids.rockwoolBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.rockwoolBlock_name,
+		Ids.rockwoolBlock_default).getInt();
 
 		
 
