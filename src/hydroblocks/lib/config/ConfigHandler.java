@@ -29,6 +29,19 @@ public class ConfigHandler {
 		Ids.rockfibreItem_actual = config.getItem(config.CATEGORY_ITEM, Names.rockfibreItem_name, 
 		Ids.rockfibreItem_default).getInt() - 256;
 		
+		Ids.cobblesledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.cobblesledgehammerTool_name,
+		Ids.cobblesledgehammerTool_default).getInt() - 256;
+		
+		Ids.ironsledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.ironsledgehammerTool_name,
+		Ids.ironsledgehammerTool_default).getInt() - 256;
+		
+		Ids.goldsledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.goldsledgehammerTool_name,
+		Ids.goldsledgehammerTool_default).getInt() - 256;
+		
+		Ids.diamondsledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.diamondsledgehammerTool_name,
+		Ids.diamondsledgehammerTool_default).getInt() - 256;
+		
+				
 		//Blocks
 		Ids.tutBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.tutBlock_name, 
 		Ids.tutBlock_default).getInt();

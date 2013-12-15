@@ -9,6 +9,17 @@ public static final String chalkItem_name = "Chalk Powder";
 public static final String rockfibreItem_unlocalizedName = "rockfibreItem";
 public static final String rockfibreItem_name = "Rock Fibre";
 
+public static final String cobblesledgehammerTool_unlocalizedName = "cobblesledgehammerTool";
+public static final String cobblesledgehammerTool_name = "Cobble Sledge Hammer"; 
+
+public static final String ironsledgehammerTool_unlocalizedName = "ironsledgehammerTool";
+public static final String ironsledgehammerTool_name = "Iron Sledge Hammer"; 
+
+public static final String goldsledgehammerTool_unlocalizedName = "goldsledgehammerTool";
+public static final String goldsledgehammerTool_name = "Gold Sledge Hammer"; 
+
+public static final String diamondsledgehammerTool_unlocalizedName = "diamondsledgehammerTool";
+public static final String diamondsledgehammerTool_name = "Diamond Sledge Hammer"; 
 
 // blocks
 public static final String tutBlock_unlocalizedName = "tutorialBlock";
@@ -37,6 +48,10 @@ public static final String rockwoolBlock_name = "Rockwool";
 
 // Tiles
 public static final String bombTile = "bombTileEntity";
+
+
+
+
 
 
 

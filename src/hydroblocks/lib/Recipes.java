@@ -73,6 +73,59 @@ public static void init() {
 /*Rockwool*/	
 	FurnaceRecipes.smelting().addSmelting(Ids.unrockwoolBlock_default, new ItemStack(Blocks.rockwoolBlock), 0.1F);
 	
+//	/* Wood Sledge Hammer*/
+//	GameRegistry.addRecipe(new ItemStack(Items.woodsledgehammer, 1),
+//			new Object[] {
+//		"WSW",
+//		"WSW",
+//		" S ", //the space = blank slot
+//		'W', Block.planks,
+//		'S', Item.stick,
+//		});
+	
+	
+	/* Stone Sledge Hammer*/
+	//GameRegistry.addRecipe(new ItemStack(Items.stonesledgehammer, 1),
+		//	new Object[] {
+//		"CSC",
+//		"CSC",
+//		" S ", //the space = blank slot
+//		'C', Block.cobblestone,
+//		'S', Item.stick,
+//		}); 
+	
+	/* Iron Sledge Hammer*/
+	GameRegistry.addRecipe(new ItemStack(Items.ironsledgehammer, 1),
+			new Object[] {
+		"ISI",
+		"ISI",
+		" S ", //the space = blank slot
+		'I', Item.ingotIron,
+		'S', Item.stick,
+		});
+	
+	/* Gold Sledge Hammer*/
+	GameRegistry.addRecipe(new ItemStack(Items.goldsledgehammer, 1),
+			new Object[] {
+		"GSG",
+		"GSG",
+		" S ", //the space = blank slot
+		'I', Item.ingotGold,
+		'S', Item.stick,
+		});
+	
+	
+	/* Diamond Sledge Hammer*/
+	GameRegistry.addRecipe(new ItemStack(Items.diamondsledgehammer, 1),
+			new Object[] {
+		"DSD",
+		"DSD",
+		" S ", //the space = blank slot
+		'I', Item.diamond,
+		'S', Item.stick,
+		});
+	
+	
 	
 }
 }
