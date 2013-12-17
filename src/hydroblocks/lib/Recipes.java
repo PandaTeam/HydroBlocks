@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
+import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 
@@ -73,6 +74,13 @@ public static void init() {
 /*Rockwool*/	
 	FurnaceRecipes.smelting().addSmelting(Ids.unrockwoolBlock_default, new ItemStack(Blocks.rockwoolBlock), 0.1F);
 	
+/*Crush*/	
+	CrushRecipes.crushing().addCrushing(Block.oreIron.blockID, new ItemStack(Item.arrow ), 0.7F);	
+	CrushRecipes.crushing().addCrushing(Block.oreGold.blockID, new ItemStack(Block.blockLapis), 0.7F);
+	CrushRecipes.crushing().addCrushing(249, new ItemStack(Block.blockLapis), 0.7F);
+	CrushRecipes.crushing().addCrushing(1398, 1, new ItemStack(Block.blockLapis), 0.7F);
+
+
 	
 	
 	/* Stone Sledge Hammer*/

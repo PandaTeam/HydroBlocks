@@ -28,7 +28,7 @@ public class CrushRecipes {
 
     private CrushRecipes()
     {
-        this.addCrushing(Block.oreIron.blockID, new ItemStack(Block.blockLapis), 0.7F);
+
     }
 
 
