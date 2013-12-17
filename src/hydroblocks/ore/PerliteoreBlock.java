@@ -51,14 +51,22 @@ public class PerliteoreBlock extends Block {
      */
     public int idDropped(int par1, Random random, int par2)  {
         return Blocks.perliteBlock.blockID;
-}
-	
-	
+       }
+    
+ 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register) {
 		blockIcon = register.registerIcon(ModInfo.ID.toLowerCase() + ":" + Names.perliteoreBlock_unlocalizedName);
 }
+
+	public int getPerliteBlock() {
+		return perliteBlock;
+	}
+
+	public void setPerliteBlock(int perliteBlock) {
+		this.perliteBlock = perliteBlock;
+	}
 	
 }
 	

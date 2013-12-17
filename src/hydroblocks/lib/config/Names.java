@@ -10,7 +10,7 @@ public static final String rockfibreItem_unlocalizedName = "rockfibreItem";
 public static final String rockfibreItem_name = "Rock Fibre";
 
 public static final String cobblesledgehammerTool_unlocalizedName = "cobblesledgehammerTool";
-public static final String cobblesledgehammerTool_name = "Cobble Sledge Hammer"; 
+public static final String cobblesledgehammerTool_name = "Cobble Test Hammer"; 
 
 public static final String ironsledgehammerTool_unlocalizedName = "ironsledgehammerTool";
 public static final String ironsledgehammerTool_name = "Iron Sledge Hammer"; 

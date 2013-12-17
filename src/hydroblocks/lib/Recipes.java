@@ -73,26 +73,17 @@ public static void init() {
 /*Rockwool*/	
 	FurnaceRecipes.smelting().addSmelting(Ids.unrockwoolBlock_default, new ItemStack(Blocks.rockwoolBlock), 0.1F);
 	
-//	/* Wood Sledge Hammer*/
-//	GameRegistry.addRecipe(new ItemStack(Items.woodsledgehammer, 1),
-//			new Object[] {
-//		"WSW",
-//		"WSW",
-//		" S ", //the space = blank slot
-//		'W', Block.planks,
-//		'S', Item.stick,
-//		});
 	
 	
 	/* Stone Sledge Hammer*/
-	//GameRegistry.addRecipe(new ItemStack(Items.stonesledgehammer, 1),
-		//	new Object[] {
-//		"CSC",
-//		"CSC",
-//		" S ", //the space = blank slot
-//		'C', Block.cobblestone,
-//		'S', Item.stick,
-//		}); 
+	GameRegistry.addRecipe(new ItemStack(Items.cobblesledgehammer, 1),
+		new Object[] {
+		"CSC",
+		"CSC",
+		" S ", //the space = blank slot
+		'C', Block.cobblestone,
+		'S', Item.stick,
+		}); 
 	
 	/* Iron Sledge Hammer*/
 	GameRegistry.addRecipe(new ItemStack(Items.ironsledgehammer, 1),

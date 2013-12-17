@@ -6,6 +6,7 @@ import hydroblocks.items.tools.GoldSledgeHammerTool;
 import hydroblocks.items.tools.IronSledgeHammerTool;
 import hydroblocks.lib.config.Ids;
 import hydroblocks.lib.config.Names;
+import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -23,7 +24,7 @@ public static void init() {
 
 	rockfibre = new RockfibreItem(Ids.rockfibreItem_actual);
 	
-	cobblesledgehammer = new CobbleSledgeHammerTool(Ids.cobblesledgehammerTool_actual);
+	cobblesledgehammer = new CobbleSledgeHammerTool(Ids.cobblesledgehammerTool_actual, EnumToolMaterial.STONE);
 	ironsledgehammer = new IronSledgeHammerTool(Ids.ironsledgehammerTool_actual);
 	goldsledgehammer = new GoldSledgeHammerTool(Ids.goldsledgehammerTool_actual);
 	diamondsledgehammer = new DiamondSledgeHammerTool(Ids.diamondsledgehammerTool_actual);
