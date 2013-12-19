@@ -67,7 +67,6 @@ public class CobbleSledgeHammerTool extends ItemTool {
 		  return dmg;
 		  }
 		 
-		 //
 		 
 	        /**
 	         * Code that makes the Cobble Sledgehammer drop the smelted item rather than the normal drop.
