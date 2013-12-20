@@ -2,12 +2,11 @@ package hydroblocks;
 
 import hydroblocks.blocks.Blocks;
 import hydroblocks.items.Items;
-import hydroblocks.lib.CraftingHandlerHydroBlocks;
+import hydroblocks.lib.EventHooks;
 import hydroblocks.lib.LogHelper;
 import hydroblocks.lib.ModInfo;
 import hydroblocks.lib.Recipes;
 import hydroblocks.lib.config.ConfigHandler;
-import hydroblocks.lib.config.EventHooks;
 import hydroblocks.lib.config.EventManager;
 import hydroblocks.proxies.CommonProxy;
 import hydroblocks.tab.hydroblockstab;
@@ -59,8 +58,6 @@ public static void preInit (FMLPreInitializationEvent event ) {
 	Recipes.init();
 	LogHelper.log(Level.INFO, "Recipes loaded");
 	
-	MinecraftForge.EVENT_BUS.register(new EventHooks());
-	
 
 
 }
@@ -71,6 +68,7 @@ public static void init ( FMLInitializationEvent event ) {
 	LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
 	
 	GameRegistry.registerWorldGenerator(eventmanager);
+	MinecraftForge.EVENT_BUS.register(new EventHooks());
 		
 		}
 
@@ -79,7 +77,7 @@ public static void postInit ( FMLPostInitializationEvent event ) {
 
 }
 
-public static CraftingHandlerHydroBlocks hydroBlocksCraftingHandler = new CraftingHandlerHydroBlocks();
+
 
 
 

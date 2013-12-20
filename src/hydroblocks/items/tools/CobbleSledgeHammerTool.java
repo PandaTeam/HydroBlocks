@@ -1,24 +1,14 @@
 package hydroblocks.items.tools;
 
 import hydroblocks.hydroblocks;
-import hydroblocks.items.Items;
-import hydroblocks.lib.CrushRecipes;
 import hydroblocks.lib.ModInfo;
 import hydroblocks.lib.config.Names;
-
-import java.util.ArrayList;
-
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
-import net.minecraft.item.crafting.FurnaceRecipes;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -67,7 +57,9 @@ public class CobbleSledgeHammerTool extends ItemTool {
 		  return dmg;
 		  }
 		 
-		 
+	
+	        
+	      
 		
 	@Override
 	@SideOnly(Side.CLIENT)

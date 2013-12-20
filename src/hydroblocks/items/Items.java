@@ -25,9 +25,9 @@ public static void init() {
 	rockfibre = new RockfibreItem(Ids.rockfibreItem_actual);
 	
 	cobblesledgehammer = new CobbleSledgeHammerTool(Ids.cobblesledgehammerTool_actual, EnumToolMaterial.STONE);
-	ironsledgehammer = new IronSledgeHammerTool(Ids.ironsledgehammerTool_actual, EnumToolMaterial.STONE);
-	goldsledgehammer = new GoldSledgeHammerTool(Ids.goldsledgehammerTool_actual, EnumToolMaterial.STONE);
-	diamondsledgehammer = new DiamondSledgeHammerTool(Ids.diamondsledgehammerTool_actual, EnumToolMaterial.STONE);
+	ironsledgehammer = new IronSledgeHammerTool(Ids.ironsledgehammerTool_actual, EnumToolMaterial.IRON);
+	goldsledgehammer = new GoldSledgeHammerTool(Ids.goldsledgehammerTool_actual, EnumToolMaterial.GOLD);
+	diamondsledgehammer = new DiamondSledgeHammerTool(Ids.diamondsledgehammerTool_actual, EnumToolMaterial.EMERALD);
 	
 	
 }
