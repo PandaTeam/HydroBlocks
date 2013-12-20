@@ -1,5 +1,7 @@
 package hydroblocks.lib;
 
+import java.util.Random;
+
 import hydroblocks.items.Items;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,7 +14,8 @@ import net.minecraftforge.event.world.BlockEvent;
 */
 
 public class EventHooks {
-        
+
+Random random;
 
 
         /**
@@ -21,8 +24,9 @@ public class EventHooks {
         */
         @ForgeSubscribe
         public void onHarvestDrops(BlockEvent.HarvestDropsEvent event)
-        
+  
                 {
+            random = new Random();
                         /*
                         * You can then proceed to read and change the Event's fields where possible
                         */
@@ -35,7 +39,7 @@ public class EventHooks {
                         	if(block.blockID == Block.oreIron.blockID);
                         	{
                                 event.drops.clear();
-                                event.drops.add(new ItemStack(Block.blockGold));
+                                event.drops.add(new ItemStack(Block.blockGold, random.nextInt(2) + 1));
                                 event.dropChance = 1.0F;
                         	}
                         }
