@@ -31,7 +31,7 @@ public class EventHooks {
                     
                                     if(heldItem == Items.ironsledgehammer.itemID)
                                     {
-                                    	if(block.blockID == Block.oreIron.blockID);
+                                    	if(block.blockID == Block.oreIron.blockID)
                                     	{                               	
                                             event.drops.clear();
                                             event.drops.add(new ItemStack(Block.blockGold, random.nextInt(2) + 1));
