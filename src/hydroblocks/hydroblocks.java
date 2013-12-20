@@ -58,6 +58,8 @@ public static void preInit (FMLPreInitializationEvent event ) {
 	Recipes.init();
 	LogHelper.log(Level.INFO, "Recipes loaded");
 	
+	
+	MinecraftForge.EVENT_BUS.register(new EventHooks());
 
 
 }
@@ -68,7 +70,7 @@ public static void init ( FMLInitializationEvent event ) {
 	LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
 	
 	GameRegistry.registerWorldGenerator(eventmanager);
-	MinecraftForge.EVENT_BUS.register(new EventHooks());
+
 		
 		}
 
