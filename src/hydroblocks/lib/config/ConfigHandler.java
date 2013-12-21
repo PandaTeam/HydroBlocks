@@ -30,16 +30,22 @@ public class ConfigHandler {
 		Ids.rockfibreItem_default).getInt() - 256;
 		
 		Ids.cobblesledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.cobblesledgehammerTool_name,
-		Ids.cobblesledgehammerTool_default).getInt() - 256;
-		
+		Ids.cobblesledgehammerTool_default).getInt() - 256;		
 		Ids.ironsledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.ironsledgehammerTool_name,
-		Ids.ironsledgehammerTool_default).getInt() - 256;
-		
+		Ids.ironsledgehammerTool_default).getInt() - 256;		
 		Ids.goldsledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.goldsledgehammerTool_name,
-		Ids.goldsledgehammerTool_default).getInt() - 256;
-		
+		Ids.goldsledgehammerTool_default).getInt() - 256;		
 		Ids.diamondsledgehammerTool_actual = config.getItem(config.CATEGORY_ITEM, Names.diamondsledgehammerTool_name,
 		Ids.diamondsledgehammerTool_default).getInt() - 256;
+		
+		Ids.copperFragments_actual = config.getItem(config.CATEGORY_ITEM, Names.copperFragments_name,
+		Ids.copperFragments_default).getInt() - 256;
+		Ids.goldFragments_actual = config.getItem(config.CATEGORY_ITEM, Names.goldFragments_name,
+		Ids.goldFragments_default).getInt() - 256;
+		Ids.ironFragments_actual = config.getItem(config.CATEGORY_ITEM, Names.ironFragments_name,
+		Ids.ironFragments_default).getInt() - 256;
+		Ids.tinFragments_actual = config.getItem(config.CATEGORY_ITEM, Names.tinFragments_name,
+		Ids.tinFragments_default).getInt() - 256;
 		
 				
 		//Blocks

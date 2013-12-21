@@ -17,6 +17,10 @@ public static Item cobblesledgehammer;
 public static Item ironsledgehammer;
 public static Item goldsledgehammer;
 public static Item diamondsledgehammer;
+public static Item copperfragments;
+public static Item goldfragments;
+public static Item ironfragments;
+public static Item tinfragments;
 
 public static void init() {
 
@@ -29,17 +33,29 @@ public static void init() {
 	goldsledgehammer = new GoldSledgeHammerTool(Ids.goldsledgehammerTool_actual, EnumToolMaterial.GOLD);
 	diamondsledgehammer = new DiamondSledgeHammerTool(Ids.diamondsledgehammerTool_actual, EnumToolMaterial.EMERALD);
 	
+	copperfragments = new CopperFragments(Ids.copperFragments_actual);
+	goldfragments = new GoldFragments(Ids.goldFragments_actual);
+	ironfragments = new IronFragments(Ids.ironFragments_actual);
+	tinfragments = new TinFragments(Ids.tinFragments_actual);
+	
 	
 }
 
 public static void addNames() {
 
 	LanguageRegistry.addName(chalk, Names.chalkItem_name);
+	
 	LanguageRegistry.addName(rockfibre, Names.rockfibreItem_name);
+	
 	LanguageRegistry.addName(cobblesledgehammer, Names.cobblesledgehammerTool_name);
 	LanguageRegistry.addName(ironsledgehammer, Names.ironsledgehammerTool_name);
 	LanguageRegistry.addName(goldsledgehammer, Names.goldsledgehammerTool_name);
 	LanguageRegistry.addName(diamondsledgehammer, Names.diamondsledgehammerTool_name);
+	
+	LanguageRegistry.addName(copperfragments, Names.copperFragments_name);
+	LanguageRegistry.addName(goldfragments, Names.goldFragments_name);
+	LanguageRegistry.addName(ironfragments, Names.ironFragments_name);
+	LanguageRegistry.addName(tinfragments, Names.tinFragments_name);
 	
 	
 }

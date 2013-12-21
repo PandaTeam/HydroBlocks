@@ -8,22 +8,26 @@ public class Ids {
 
 public static int chalkItem_actual;
 public static final int chalkItem_default = 30350;
-
 public static int rockfibreItem_actual;
 public static final int rockfibreItem_default = 30351;
 
 public static int ironsledgehammerTool_actual;
 public static final int ironsledgehammerTool_default = 30352;
-
 public static int cobblesledgehammerTool_actual;
 public static final int cobblesledgehammerTool_default = 30353;
-
 public static int goldsledgehammerTool_actual;
 public static final int goldsledgehammerTool_default = 30355;
-
 public static int diamondsledgehammerTool_actual;
 public static final int diamondsledgehammerTool_default = 30356;
 
+public static int copperFragments_actual;
+public static final int copperFragments_default = 30357;
+public static int goldFragments_actual;
+public static final int goldFragments_default = 30358;
+public static int ironFragments_actual;
+public static final int ironFragments_default = 30359;
+public static int tinFragments_actual;
+public static final int tinFragments_default = 30360;
 
 //blocks
 public static int tutBlock_actual;

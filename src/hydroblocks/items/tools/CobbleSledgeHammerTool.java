@@ -56,7 +56,6 @@ public class CobbleSledgeHammerTool extends ItemTool {
 		   dmg = 8.0F;
 		  return dmg;
 		  }
-		 
 	
 	        
 	      

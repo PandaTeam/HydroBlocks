@@ -11,15 +11,22 @@ public static final String rockfibreItem_name = "Rock Fibre";
 
 public static final String cobblesledgehammerTool_unlocalizedName = "cobblesledgehammerTool";
 public static final String cobblesledgehammerTool_name = "Cobble Test Hammer"; 
-
 public static final String ironsledgehammerTool_unlocalizedName = "ironsledgehammerTool";
 public static final String ironsledgehammerTool_name = "Iron Sledge Hammer"; 
-
 public static final String goldsledgehammerTool_unlocalizedName = "goldsledgehammerTool";
 public static final String goldsledgehammerTool_name = "Gold Sledge Hammer"; 
-
 public static final String diamondsledgehammerTool_unlocalizedName = "diamondsledgehammerTool";
 public static final String diamondsledgehammerTool_name = "Diamond Sledge Hammer"; 
+
+public static final String copperFragments_unlocalizedName = "copperFragments";
+public static final String copperFragments_name = "Copper Fragments"; 
+public static final String goldFragments_unlocalizedName = "goldFragments";
+public static final String goldFragments_name = "Gold Fragments"; 
+public static final String ironFragments_unlocalizedName = "ironFragments";
+public static final String ironFragments_name = "Iron Fragments"; 
+public static final String tinFragments_unlocalizedName = "tinFragments";
+public static final String tinFragments_name = "Tin Fragments"; 
+
 
 // blocks
 public static final String tutBlock_unlocalizedName = "tutorialBlock";
