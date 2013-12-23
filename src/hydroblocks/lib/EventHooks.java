@@ -27,7 +27,7 @@ if(heldItem.itemID == Items.cobblesledgehammer.itemID || heldItem.itemID == Item
 
 {
 
-	if (event.block.blockID == Block.oreIron.blockID) {
+	if (event.harvester != null && event.harvester.getHeldItem() != null &&event.block.blockID == Block.oreIron.blockID) {
 		event.drops.clear();
         event.drops.add(new ItemStack(Items.ironfragments, random.nextInt(2) + 1));
         event.dropChance = 1.0F;
