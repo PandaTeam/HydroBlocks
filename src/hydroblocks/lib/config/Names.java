@@ -10,7 +10,7 @@ public static final String rockfibreItem_unlocalizedName = "rockfibreItem";
 public static final String rockfibreItem_name = "Rock Fibre";
 
 public static final String cobblesledgehammerTool_unlocalizedName = "cobblesledgehammerTool";
-public static final String cobblesledgehammerTool_name = "Cobble Test Hammer"; 
+public static final String cobblesledgehammerTool_name = "Cobble Sledge Hammer"; 
 public static final String ironsledgehammerTool_unlocalizedName = "ironsledgehammerTool";
 public static final String ironsledgehammerTool_name = "Iron Sledge Hammer"; 
 public static final String goldsledgehammerTool_unlocalizedName = "goldsledgehammerTool";
@@ -26,6 +26,11 @@ public static final String ironFragments_unlocalizedName = "ironFragments";
 public static final String ironFragments_name = "Iron Fragments"; 
 public static final String tinFragments_unlocalizedName = "tinFragments";
 public static final String tinFragments_name = "Tin Fragments"; 
+
+public static final String tinIngot_unlocalizedName = "tinIngot";
+public static final String tinIngot_name = "Tin Ingot";
+public static final String copperIngot_unlocalizedName = "copperIngot";
+public static final String copperIngot_name = "Copper Ingot";
 
 
 // blocks
@@ -53,8 +58,15 @@ public static final String unrockwoolBlock_name = "Unrefined Rockwool";
 public static final String rockwoolBlock_unlocalizedName = "rockwoolBlock";
 public static final String rockwoolBlock_name = "Rockwool";
 
+public static final String batteryBlock_unlocalizedName = "batteryBlock";
+public static final String batteryBlock_name = "battery";
+
 // Tiles
 public static final String bombTile = "bombTileEntity";
+public static final String batteryTile = "batteryTileEntity";
+
+
+
 
 
 

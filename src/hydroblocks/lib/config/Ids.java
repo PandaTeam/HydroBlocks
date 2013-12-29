@@ -29,6 +29,11 @@ public static final int ironFragments_default = 30359;
 public static int tinFragments_actual;
 public static final int tinFragments_default = 30360;
 
+public static int tinIngot_actual;
+public static final int tinIngot_default = 30361;
+public static int copperIngot_actual;
+public static final int copperIngot_default = 30362;
+
 //blocks
 public static int tutBlock_actual;
 public static final int tutBlock_default = 3350;
@@ -51,7 +56,8 @@ public static final int unrockwoolBlock_default = 3355;
 public static int rockwoolBlock_actual;
 public static final int rockwoolBlock_default = 3356;
 
-
+public static int batteryBlock_actual;
+public static final int batteryBlock_default = 3357;
 
 
 

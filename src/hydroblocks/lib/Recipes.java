@@ -71,11 +71,7 @@ public static void init() {
 			'R', Items.rockfibre,
 			});
 	
-/*Rockwool*/	
-	FurnaceRecipes.smelting().addSmelting(Ids.unrockwoolBlock_default, new ItemStack(Blocks.rockwoolBlock), 0.1F);
 
-
-	
 	
 	/* Stone Sledge Hammer*/
 	GameRegistry.addRecipe(new ItemStack(Items.cobblesledgehammer, 1),
@@ -117,6 +113,15 @@ public static void init() {
 		'I', Item.diamond,
 		'S', Item.stick,
 		});
+	
+	/*Furnace Recipes*/	
+	FurnaceRecipes.smelting().addSmelting(Ids.unrockwoolBlock_default, new ItemStack(Blocks.rockwoolBlock), 0.1F);
+	
+	FurnaceRecipes.smelting().addSmelting(Ids.ironFragments_default, new ItemStack(Item.ingotIron), 0.1F);
+	FurnaceRecipes.smelting().addSmelting(Ids.goldFragments_default, new ItemStack(Item.ingotGold), 0.1F);
+	FurnaceRecipes.smelting().addSmelting(Ids.copperFragments_default, new ItemStack(Items.copperIngot), 0.1F);
+	FurnaceRecipes.smelting().addSmelting(Ids.tinFragments_default, new ItemStack(Items.tinIngot), 0.1F);
+	
 	
 	
 	

@@ -1,3 +1,4 @@
+
 package hydroblocks.items.tools;
 
 import hydroblocks.hydroblocks;
@@ -24,7 +25,7 @@ public class DiamondSledgeHammerTool extends ItemTool {
 	public DiamondSledgeHammerTool(int id, EnumToolMaterial material) {
 		super(id, 2F, material, blocksEffectiveAgainst);
 		setCreativeTab(hydroblocks.hydroblocks);
-		setUnlocalizedName(Names.cobblesledgehammerTool_unlocalizedName);
+		setUnlocalizedName(Names.diamondsledgehammerTool_unlocalizedName);
 		setMaxStackSize(1);
 		setMaxDamage(2082);
 	}

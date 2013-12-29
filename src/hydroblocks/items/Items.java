@@ -8,6 +8,8 @@ import hydroblocks.lib.config.Ids;
 import hydroblocks.lib.config.Names;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Items {
@@ -21,6 +23,8 @@ public static Item copperfragments;
 public static Item goldfragments;
 public static Item ironfragments;
 public static Item tinfragments;
+public static Item tinIngot;
+public static Item copperIngot;
 
 public static void init() {
 
@@ -37,6 +41,9 @@ public static void init() {
 	goldfragments = new GoldFragments(Ids.goldFragments_actual);
 	ironfragments = new IronFragments(Ids.ironFragments_actual);
 	tinfragments = new TinFragments(Ids.tinFragments_actual);
+	
+	tinIngot = new TinIngot(Ids.tinIngot_actual);
+	copperIngot = new CopperIngot(Ids.copperIngot_actual);
 	
 	
 }
@@ -57,7 +64,15 @@ public static void addNames() {
 	LanguageRegistry.addName(ironfragments, Names.ironFragments_name);
 	LanguageRegistry.addName(tinfragments, Names.tinFragments_name);
 	
+	LanguageRegistry.addName(tinIngot, Names.tinIngot_name);
+	LanguageRegistry.addName(copperIngot, Names.copperIngot_name);
 	
+}
+
+public static void oreRegistration()
+{
+	OreDictionary.registerOre("ingotCopper", new ItemStack(Items.copperIngot));
+	OreDictionary.registerOre("ingottin", new ItemStack(Items.tinIngot));
 }
 
 

@@ -1,62 +1,86 @@
 package hydroblocks.blocks.tileentities;
 
+import ic2.api.energy.event.EnergyTileLoadEvent;
+import ic2.api.energy.event.EnergyTileUnloadEvent;
+import ic2.api.energy.tile.IEnergySink;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraftforge.common.ForgeDirection;
+import net.minecraftforge.common.MinecraftForge;
 
-public class TileEntityBattery extends TileEntity {
+public class TileEntityBattery extends TileEntity implements IEnergySink {
 	
-	public static final int MIN_CAPACITY = 0;
-	public static final int MAX_CAPACITY = 100;
+	public double energy = 0.0D;
+	public double maxEnergy = 10000.0D;
+	private boolean initialized;
 	
-
-	private int min;
-	private int max;
-	private int current;
-
-	public TileEntityBattery() {
-		min = MIN_CAPACITY;
-		max = MAX_CAPACITY;
-		current = 0;
-	}
-
-	public int isIdle() {
-		return current = 100;
-		}
-	
-
-	
-	@Override
-	public void updateEntity() {
-		if (!worldObj.isRemote) {
+	public void readFromNBT(NBTTagCompound nbttagcompound) {
+		super.readFromNBT(nbttagcompound);
 		
-			if (current <= 100 ) {
-				worldObj.setBlockMetadataWithNotify(xCoord, yCoord, zCoord, 1, 3);
-			}
-			}
+		if(nbttagcompound.hasKey("energy")) {
+			this.energy = nbttagcompound.getDouble("energy");
+		}
+	}
+		
+		public void writeToNBT(NBTTagCompound nbttagcompound) {
+			super.writeToNBT(nbttagcompound);
 			
-			current++;
-		}
-	
-	
-	@Override
-	public void writeToNBT (NBTTagCompound compound) {
-		super.writeToNBT(compound);
+			nbttagcompound.setDouble("energy", this.energy);
+			
+			}
 		
-		compound.setInteger("Min", (short)min);
-		compound.setInteger("Max", (short)max);
-		compound.setInteger("Current", (short)current);
+		@Override
+		public void updateEntity() {
+		if(!initialized && worldObj != null) {
+			if(!worldObj.isRemote) {
+				EnergyTileLoadEvent loadEvent = new EnergyTileLoadEvent(this);
+				MinecraftForge.EVENT_BUS.post(loadEvent);
+			}
+			initialized = true;
+		}
+		
+	}
+
+	@Override 
+	public void invalidate() {
+		EnergyTileUnloadEvent unloadEvent = new EnergyTileUnloadEvent(this);
+		MinecraftForge.EVENT_BUS.post(unloadEvent);
+	}
+		
+		
+		
+	@Override
+	public boolean acceptsEnergyFrom(TileEntity emitter,
+			ForgeDirection direction) {
+		return true;
 	}
 
 	@Override
-	public void readFromNBT (NBTTagCompound compound) {
-		super.readFromNBT(compound);
+	public double demandedEnergyUnits() {
+		return this.maxEnergy - this.energy;
+	}
+
+	@Override
+	public double injectEnergyUnits(ForgeDirection directionFrom, double amount) {
+		if (this.energy >= this.maxEnergy) return amount;
 		
-		min = compound.getInteger("Min");
-		max = compound.getInteger("Max");
-		current = compound.getInteger("Current");
-	
+		double openEnergy = this.maxEnergy = this.energy;
+		
+		if(openEnergy >= amount) {
+			this.energy += amount;
+			return 0.0D;
+		} else if (amount > openEnergy) {
+			this.energy = this.maxEnergy;
+			return amount = openEnergy;
+		}
+		
+		
+		return 0;
+	}
+
+	@Override
+	public int getMaxSafeInput() {
+		return 512;
 	}
 	
 }
-
-

@@ -14,7 +14,9 @@ import hydroblocks.tab.hydroblockstab;
 import java.util.logging.Level;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -46,6 +48,7 @@ public static void preInit (FMLPreInitializationEvent event ) {
 	LogHelper.log(Level.INFO, "Preparing items");
 	Items.init();
 	Items.addNames();
+	Items.oreRegistration();
 	LogHelper.log(Level.INFO, "Items loaded");
 
 	LogHelper.log(Level.INFO, "Preparing blocks");
@@ -61,18 +64,22 @@ public static void preInit (FMLPreInitializationEvent event ) {
 	
 	MinecraftForge.EVENT_BUS.register(new EventHooks());
 
-
-}
-
-@EventHandler
-public static void init ( FMLInitializationEvent event ) {
+	
 	
 	LanguageRegistry.instance().addStringLocalization("itemGroup." + ModInfo.NAME, "en_US", ModInfo.NAME);
 	
 	GameRegistry.registerWorldGenerator(eventmanager);
 
-		
-		}
+
+}
+
+@EventHandler
+public static void init ( FMLInitializationEvent event ) 
+{
+	
+}
+
+
 
 @EventHandler
 public static void postInit ( FMLPostInitializationEvent event ) {

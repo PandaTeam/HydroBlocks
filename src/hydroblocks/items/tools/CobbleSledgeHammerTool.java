@@ -1,3 +1,5 @@
+
+
 package hydroblocks.items.tools;
 
 import hydroblocks.hydroblocks;
@@ -28,6 +30,7 @@ public class CobbleSledgeHammerTool extends ItemTool {
 		setMaxStackSize(1);
 		setMaxDamage(175);
 		
+		
 	}
 	public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10) {
 		if (!par2EntityPlayer.canPlayerEdit(par4, par5, par6, par7, par1ItemStack)) {
@@ -47,6 +50,8 @@ public class CobbleSledgeHammerTool extends ItemTool {
 		 public boolean canHarvestBlockA(Block par1Block) {
 		  return true;
 		 }
+		 
+		 
 		 public float getStrVsBlock(ItemStack par1ItemStack, Block par2Block) {
 		  float dmg = 1.0F;
 		  for (int i = 0; i < CobbleSledgeHammerTool.blocksEffectiveAgainst.length; ++i) {
@@ -58,9 +63,17 @@ public class CobbleSledgeHammerTool extends ItemTool {
 		   dmg = 8.0F;
 		  return dmg;
 		  }
-	
-	        
-	      
+		 
+		    public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
+		    {
+		        return this.toolMaterial.getToolCraftingMaterial() == par2ItemStack.itemID ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
+		    }
+		    
+		    public int getItemEnchantability()
+		    {
+		        return this.toolMaterial.getEnchantability();
+		    }
+	     
 		
 	@Override
 	@SideOnly(Side.CLIENT)

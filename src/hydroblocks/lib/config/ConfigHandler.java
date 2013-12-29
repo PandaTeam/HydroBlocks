@@ -47,6 +47,12 @@ public class ConfigHandler {
 		Ids.tinFragments_actual = config.getItem(config.CATEGORY_ITEM, Names.tinFragments_name,
 		Ids.tinFragments_default).getInt() - 256;
 		
+		Ids.tinIngot_actual = config.getItem(config.CATEGORY_ITEM, Names.tinIngot_name,
+		Ids.tinIngot_default).getInt() - 256;
+		Ids.copperIngot_actual = config.getItem(config.CATEGORY_ITEM, Names.copperIngot_name,
+		Ids.copperIngot_default).getInt() - 256;
+				
+		
 				
 		//Blocks
 		Ids.tutBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.tutBlock_name, 
@@ -70,6 +76,9 @@ public class ConfigHandler {
 		
 		Ids.rockwoolBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.rockwoolBlock_name,
 		Ids.rockwoolBlock_default).getInt();
+		
+		Ids.batteryBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.batteryBlock_name,
+		Ids.batteryBlock_default).getInt();
 
 		
 

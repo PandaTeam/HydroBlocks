@@ -1,5 +1,6 @@
 package hydroblocks.blocks;
 
+import hydroblocks.blocks.tileentities.TileEntityBattery;
 import hydroblocks.blocks.tileentities.TileEntityBomb;
 import hydroblocks.lib.config.Ids;
 import hydroblocks.lib.config.Names;
@@ -18,6 +19,7 @@ public static Block perliteoreBlock;
 public static Block chalkoreBlock;
 public static Block unrockwoolBlock;
 public static Block rockwoolBlock;
+public static Block batteryBlock;
 
 
 
@@ -43,11 +45,15 @@ GameRegistry.registerBlock(unrockwoolBlock, Names.unrockwoolBlock_name);
 rockwoolBlock = new RockwoolBlock(Ids.rockwoolBlock_actual);
 GameRegistry.registerBlock(rockwoolBlock, Names.rockwoolBlock_name);
 
+batteryBlock = new BatteryBlock(Ids.batteryBlock_actual);
+GameRegistry.registerBlock(batteryBlock, Names.batteryBlock_name);
+
 
 }
 
 public static void registerTileEntities() {
     GameRegistry.registerTileEntity(TileEntityBomb.class, Names.bombTile);
+    GameRegistry.registerTileEntity(TileEntityBattery.class, Names.batteryTile);
 }
 
 public static void addNames() {
@@ -58,6 +64,7 @@ LanguageRegistry.addName(perliteoreBlock, Names.perliteoreBlock_name);
 LanguageRegistry.addName(chalkoreBlock, Names.chalkoreBlock_name);
 LanguageRegistry.addName(unrockwoolBlock, Names.unrockwoolBlock_name);
 LanguageRegistry.addName(rockwoolBlock, Names.rockwoolBlock_name);
+LanguageRegistry.addName(batteryBlock, Names.batteryBlock_name);
 }
 
 
