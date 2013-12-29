@@ -17,7 +17,7 @@ public class TileEntityBattery extends TileEntityUniversalElectrical implements 
 	@Override
 	public EnumSet<ForgeDirection> getOutputDirections()
 	{
-		return EnumSet.of(ForgeDirection.UP);
+		return EnumSet.of(ForgeDirection.UP, ForgeDirection.DOWN);
 	}
 
 	@Override
@@ -27,13 +27,25 @@ public class TileEntityBattery extends TileEntityUniversalElectrical implements 
 
 	@Override
 	public float getProvide(ForgeDirection direction) {
+		if (energyStored >= 1){
+			return 1;
+		} else
 		return 0;
+		
 	}
 
 	@Override
 	public float getMaxEnergyStored() {
 		// TODO Auto-generated method stub
 		return 10000;
+	}
+	
+	@Override
+	public void updateEntity()
+	{
+		super.updateEntity();
+		this.produce();
+		//this.receiveElectricity(5000,true);
 	}
 	
 }
