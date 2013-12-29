@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
@@ -25,6 +26,24 @@ public class BatteryBlock extends BlockContainer {
 					
 		}
 
+	@Override
+	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9) {
+		
+		if(world.isRemote) return true;
+		
+		TileEntityBattery te = (TileEntityBattery) world.getBlockTileEntity(x, y, z);
+			
+		if (te != null) {
+			if (player.isSneaking()) te.energyStored = 0;
+			player.addChatMessage("Current Energy:" + te.energyStored);
+			
+			
+			
+		}
+		
+		return true;
+	}
+	
 	@Override
 	public TileEntity createNewTileEntity(World world) {
 		return null;
