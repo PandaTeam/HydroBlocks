@@ -53,16 +53,6 @@ return true;
 }
 
 
-	
-
-
-@Override
-public TileEntity createTileEntity(World world, int meta) {
-return new TileEntityBattery();
-}
-
-
-
 @SideOnly(Side.CLIENT)
 private Icon emptyIcon;
 private	Icon tenIcon;
@@ -164,13 +154,9 @@ public Icon getIcon(int side, int meta) {
 
 
 
-
-
-
-
 @Override
 public TileEntity createNewTileEntity(World world) {
-	return null;
+	return new TileEntityBattery();
 }
 
 
