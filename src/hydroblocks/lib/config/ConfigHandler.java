@@ -79,6 +79,10 @@ public class ConfigHandler {
 		
 		Ids.batteryBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.batteryBlock_name,
 		Ids.batteryBlock_default).getInt();
+		
+		Ids.hydrofurnaceBlock_actual = config.getBlock(config.CATEGORY_BLOCK, Names.hydrofurnaceBlock_name,
+		Ids.hydrofurnaceBlock_default).getInt();
+		
 
 		
 

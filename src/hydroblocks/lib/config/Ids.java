@@ -59,6 +59,9 @@ public static final int rockwoolBlock_default = 3356;
 public static int batteryBlock_actual;
 public static final int batteryBlock_default = 3357;
 
+public static int hydrofurnaceBlock_actual;
+public static final int hydrofurnaceBlock_default = 3358;
+
 
 
 }

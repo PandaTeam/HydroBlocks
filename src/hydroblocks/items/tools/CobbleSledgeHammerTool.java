@@ -28,7 +28,7 @@ public class CobbleSledgeHammerTool extends ItemTool {
 		setCreativeTab(hydroblocks.hydroblocks);
 		setUnlocalizedName(Names.cobblesledgehammerTool_unlocalizedName);
 		setMaxStackSize(1);
-		setMaxDamage(175);
+		setMaxDamage(0);
 		
 		
 	}

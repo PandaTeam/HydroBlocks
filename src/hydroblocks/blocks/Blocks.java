@@ -2,6 +2,7 @@ package hydroblocks.blocks;
 
 import hydroblocks.blocks.tileentities.TileEntityBattery;
 import hydroblocks.blocks.tileentities.TileEntityBomb;
+import hydroblocks.blocks.tileentities.TileEntityHydroFurnace;
 import hydroblocks.lib.config.Ids;
 import hydroblocks.lib.config.Names;
 import hydroblocks.ore.ChalkoreBlock;
@@ -20,6 +21,7 @@ public static Block chalkoreBlock;
 public static Block unrockwoolBlock;
 public static Block rockwoolBlock;
 public static Block batteryBlock;
+public static Block furnaceBlock;
 
 
 
@@ -48,12 +50,16 @@ GameRegistry.registerBlock(rockwoolBlock, Names.rockwoolBlock_name);
 batteryBlock = new BatteryBlock(Ids.batteryBlock_actual);
 GameRegistry.registerBlock(batteryBlock, Names.batteryBlock_name);
 
+furnaceBlock = new HydroFurnaceBlock(Ids.hydrofurnaceBlock_actual);
+GameRegistry.registerBlock(furnaceBlock, Names.hydrofurnaceBlock_name);
+
 
 }
 
 public static void registerTileEntities() {
     GameRegistry.registerTileEntity(TileEntityBomb.class, Names.bombTile);
     GameRegistry.registerTileEntity(TileEntityBattery.class, Names.batteryTile);
+    GameRegistry.registerTileEntity(TileEntityHydroFurnace.class, Names.hydrofurnaceTile);
 }
 
 public static void addNames() {
@@ -65,6 +71,7 @@ LanguageRegistry.addName(chalkoreBlock, Names.chalkoreBlock_name);
 LanguageRegistry.addName(unrockwoolBlock, Names.unrockwoolBlock_name);
 LanguageRegistry.addName(rockwoolBlock, Names.rockwoolBlock_name);
 LanguageRegistry.addName(batteryBlock, Names.batteryBlock_name);
+LanguageRegistry.addName(furnaceBlock, Names.hydrofurnaceBlock_name);
 }
 
 

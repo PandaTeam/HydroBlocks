@@ -61,9 +61,14 @@ public static final String rockwoolBlock_name = "Rockwool";
 public static final String batteryBlock_unlocalizedName = "batteryBlock";
 public static final String batteryBlock_name = "battery";
 
+public static final String hydrofurnaceBlock_unlocalizedName = "hydrofurnaceBlock";
+public static final String hydrofurnaceBlock_name = "Furnace";
+
 // Tiles
 public static final String bombTile = "bombTileEntity";
 public static final String batteryTile = "batteryTileEntity";
+public static final String hydrofurnaceTile = "hydrofurnaceTileEntity";
+
 
 
 
